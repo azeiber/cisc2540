@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://drq7vkn2d4u2f"]
+
+[ext_resource type="Texture2D" uid="uid://dqulc77ief604" path="res://ocean.jpg" id="1_vo7ap"]
+[ext_resource type="Texture2D" uid="uid://siien03ddj83" path="res://shark.png" id="2_1a73e"]
+[ext_resource type="Texture2D" uid="uid://cvgya3o3x8mfe" path="res://seahorse.png" id="3_dbu7x"]
+[ext_resource type="PackedScene" uid="uid://d1hrrij57goy1" path="res://scene2.tscn" id="4_yj8r6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Ocean" type="Sprite2D" parent="."]
+position = Vector2(578.75, 331.5)
+scale = Vector2(1.44063, 1.10833)
+texture = ExtResource("1_vo7ap")
+
+[node name="Shark" type="Sprite2D" parent="Ocean"]
+position = Vector2(-13.7, 0)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_1a73e")
+
+[node name="Seahorse" type="Sprite2D" parent="Ocean"]
+position = Vector2(-314.967, 166.466)
+scale = Vector2(0.0960231, 0.122556)
+texture = ExtResource("3_dbu7x")
+
+[node name="Node2D" parent="." instance=ExtResource("4_yj8r6")]
