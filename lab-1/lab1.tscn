@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://drq7vkn2d4u2f"]
+[gd_scene load_steps=8 format=3 uid="uid://drq7vkn2d4u2f"]
 
 [ext_resource type="Texture2D" uid="uid://dqulc77ief604" path="res://ocean.jpg" id="1_vo7ap"]
 [ext_resource type="Texture2D" uid="uid://siien03ddj83" path="res://shark.png" id="2_1a73e"]
 [ext_resource type="Texture2D" uid="uid://cvgya3o3x8mfe" path="res://seahorse.png" id="3_dbu7x"]
 [ext_resource type="PackedScene" uid="uid://d1hrrij57goy1" path="res://scene2.tscn" id="4_yj8r6"]
+[ext_resource type="Texture2D" uid="uid://bjopx46sgo7qc" path="res://fish1.webp" id="5_w72xc"]
+[ext_resource type="Texture2D" uid="uid://hg2qtnsddaoh" path="res://fish2.png" id="6_qrl4w"]
+[ext_resource type="Texture2D" uid="uid://dq55ab74tbw02" path="res://fish3.png" id="7_smkah"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,4 +25,21 @@ position = Vector2(-314.967, 166.466)
 scale = Vector2(0.0960231, 0.122556)
 texture = ExtResource("3_dbu7x")
 
-[node name="Node2D" parent="." instance=ExtResource("4_yj8r6")]
+[node name="Node2D" parent="Ocean" instance=ExtResource("4_yj8r6")]
+position = Vector2(-401.735, -299.098)
+scale = Vector2(0.694143, 0.902256)
+
+[node name="Fish1" type="Sprite2D" parent="Ocean/Node2D"]
+position = Vector2(909, 471)
+scale = Vector2(0.088983, 0.1625)
+texture = ExtResource("5_w72xc")
+
+[node name="Fish2" type="Sprite2D" parent="Ocean/Node2D"]
+position = Vector2(418.5, 522.5)
+scale = Vector2(0.0816667, 0.1425)
+texture = ExtResource("6_qrl4w")
+
+[node name="Fish3" type="Sprite2D" parent="Ocean/Node2D"]
+position = Vector2(1048, 568)
+scale = Vector2(0.0906251, 0.103333)
+texture = ExtResource("7_smkah")
