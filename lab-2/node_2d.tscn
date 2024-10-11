@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://lyjwve7buwna"]
+
+[ext_resource type="Texture2D" uid="uid://bidryeg65o3v5" path="res://IMG_3930.jpg" id="1_8rqok"]
+[ext_resource type="Script" path="res://img_3930.gd" id="2_qn0lw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Img3930" type="Sprite2D" parent="."]
+position = Vector2(596, 321)
+rotation = 1.56444
+texture = ExtResource("1_8rqok")
+script = ExtResource("2_qn0lw")
